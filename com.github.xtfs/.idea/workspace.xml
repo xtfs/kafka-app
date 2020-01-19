@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670f1ce4-b140-4869-a73a-4363f0cca207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/kafka-basic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ConsumerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ConsumerDemoGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ConsumerDemoWithThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ProducerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ProducerDemoKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basic/src/main/java/kafka/tutorial1/ProducerDemoWithCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-twitter-producer/kafka-twitter-producer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-twitter-producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-twitter-producer/src/main/java/kafka/tutorial2/TwitterProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -37,13 +48,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka-basic/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github.xtfs.kafka.tutorial1" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kafka-basic/src/main/java" />
+      <recent name="$PROJECT_DIR$/kafka-twitter-producer/src/main/java" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TwitterProducer">
+  <component name="RunManager" selected="Application.TwitterProducer (1)">
     <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.xtfs.kafka.tutorial1.ConsumerDemo" />
       <module name="com.github.xtfs" />
@@ -83,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwitterProducer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka.tutorial2.TwitterProducer" />
+      <module name="kafka-twitter-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka.tutorial2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TwitterProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.xtfs.kafka.tutorial2.TwitterProducer" />
       <module name="com.github.xtfs" />
@@ -98,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwitterProducer (1)" />
         <item itemvalue="Application.TwitterProducer" />
         <item itemvalue="Application.ConsumerDemo" />
         <item itemvalue="Application.ConsumerDemoGroups" />
@@ -131,30 +165,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="353" key="GridCell.Tab.0.bottom" timestamp="1578450538866">
+    <state x="1921" y="200" width="800" height="677" key="#Project_Structure" timestamp="1579465464239">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1921" y="200" width="800" height="677" key="#Project_Structure/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579465464239" />
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1579466988594">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1578440684486" />
-    <state width="1874" height="353" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578450538866" />
-    <state width="1874" height="353" key="GridCell.Tab.0.center" timestamp="1578450538866">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579466988594" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1579466988594">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1578440684485" />
-    <state width="1874" height="353" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578450538866" />
-    <state width="1874" height="353" key="GridCell.Tab.0.left" timestamp="1578450538866">
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579466988594" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1579466988593">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1578440684485" />
-    <state width="1874" height="353" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578450538866" />
-    <state width="1874" height="353" key="GridCell.Tab.0.right" timestamp="1578450538866">
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579466988593" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1579466988594">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1578440684485" />
-    <state width="1874" height="353" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578450538866" />
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1578353034767">
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579466988594" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1579465372211">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1578353034767" />
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1578351551935" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579465372211" />
+    <state x="1635" y="236" width="1372" height="605" key="new project wizard" timestamp="1579465420096">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1635" y="236" width="1372" height="605" key="new project wizard/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1579465420096" />
   </component>
 </project>
