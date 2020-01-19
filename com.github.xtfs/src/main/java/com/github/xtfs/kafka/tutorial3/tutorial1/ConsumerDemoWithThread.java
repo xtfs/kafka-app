@@ -1,4 +1,4 @@
-package com.github.xtfs.kafka.tutorial1;
+package com.github.xtfs.kafka.tutorial3.tutorial1;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
