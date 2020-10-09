@@ -28,6 +28,7 @@ public class FraudCheckService {
             for (ConsumerRecord<String, String> record : records) {
                 logger.info("Pedido [" + record.value() + "] verificado com sucesso");
                 producer.produce("order_verified", record.value());
+                Thread.sleep(500);
             }
         }
     }

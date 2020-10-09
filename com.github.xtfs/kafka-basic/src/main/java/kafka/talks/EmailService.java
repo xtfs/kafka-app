@@ -25,7 +25,7 @@ public class EmailService {
 
             for (ConsumerRecord<String, String> record : records) {
                 logger.info("Email da order [" + record.value() + "] enviado com sucesso!");
-//                Thread.sleep(500);
+                Thread.sleep(500);
             }
         }
     }
