@@ -1,4 +1,4 @@
-package kafka.tutorial1;
+package kafka.talks;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -12,13 +12,13 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerDemo {
+public class ConsumerDemoWithThread {
 
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(ConsumerDemo.class.getName());
+        Logger logger = LoggerFactory.getLogger(ConsumerDemoWithThread.class.getName());
 
         String bootstrapServers = "localhost:9092";
-        String groupId = "my-second-app";
+        String groupId = "my-thread-app";
         String topic = "first_topic";
 
         //create Consumer properties

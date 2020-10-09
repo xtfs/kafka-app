@@ -1,4 +1,4 @@
-package kafka.tutorial1;
+package kafka.talks;
 
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -6,33 +6,31 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
+import java.util.UUID;
 
-public class ProducerDemoKeys {
+public class NewOrderService {
     public static void main(String[] args) {
-        //create Producer properties
-        final Logger logger = LoggerFactory.getLogger(ProducerDemoKeys.class);
 
-        String bootstrapServers = "127.0.0.1:9092";
-        String topic = "first_topic";
+        final Logger logger = LoggerFactory.getLogger(NewOrderService.class);
+
+        String bootstrapServers = "localhost:9092";
+        String topic = "new_order_received";
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
-        //create Producer
-        KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
+        KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
-        for (int i = 0; i < 10; i++) {        //create a Producer record
-            String value = "Hello world!" + Integer.toString(i);
-            String key = "id_" + Integer.toString(i);
+        for (int i = 0; i < 100000; i++) {
+            final String value = UUID.randomUUID().toString().replace("-", "");
+            String key = "id_" + i;
             final ProducerRecord<String, String> record =
-                    new ProducerRecord<String, String>(topic, key, value);
+                    new ProducerRecord<>(topic, key, value);
 
-            //send data
             producer.send(record, new Callback() {
                 public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                    // executes every time a record is successfully sent or an exception is thrown
                     if (e == null) {
                         logger.info("Received new metadata \n" +
                                 "Topic: " + recordMetadata.topic() + "\n" +
